@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Lottery Chooser</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <header>
+        The Lottery Chooser
+    </header>
+    <body>
+        <div id="form">
+            <div id="main">
+                <div id="left">
+                    <form id="nameForm">
+                        <label for="name" id="names-label">Names (separated by commas):</label>
+                        <input type="text" id="names" name="names">
+                        <input type="button" value="Add" onclick="addNames()">
+                    </form>
+                </div>
+                <div id="right">
+                    <ul id="nameList">
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <ul id="nameList">
+                </ul>
+            </div>
+            <div id="bottom">
+                <input type="button" value="Choose" id="choose" onclick="chooseName()" disabled>
+                <input type="button" value="Reset" onclick="resetNames()">
+            </div>
+        </div>
+        <div>
+            <p id="chosenName">Chosen Name:</p>
+        </div>
+    </body>
+</html>
